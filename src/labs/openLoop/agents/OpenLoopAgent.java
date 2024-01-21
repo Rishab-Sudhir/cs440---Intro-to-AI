@@ -181,9 +181,15 @@ public class OpenLoopAgent
         
         if (unitView.getYPosition() != 0) {
             actions.put(Myid, Action.createPrimitiveMove(Myid, Direction.NORTH));
-        }else if (unitView.getXPosition() != 6){
+        } else if ((unitView.getYPosition() == 0) && (unitView.getXPosition() == 0)) {
+            if (state.resourceAt(1,1) != null) {
+                actions.put(Myid, Action.createPrimitiveGather(Myid, Direction.SOUTHEAST));
+            }else{
+                actions.put(Myid, Action.createPrimitiveMove(Myid, Direction.EAST));
+            }
+        } else if (unitView.getXPosition() != 6) {
             actions.put(Myid, Action.createPrimitiveMove(Myid, Direction.EAST));
-        }else{
+        } else {
             if (state.getUnit(Enemyid) != null) {
                 actions.put(Myid, Action.createPrimitiveAttack(Myid, Enemyid));
             }

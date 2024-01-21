@@ -45,6 +45,12 @@
             </deathLogList>
             <deathLogList>
                 <roundNumber>13</roundNumber>
+            </deathLogList>
+            <deathLogList>
+                <roundNumber>14</roundNumber>
+            </deathLogList>
+            <deathLogList>
+                <roundNumber>15</roundNumber>
                 <deathLog>
                     <deadUnitID>3</deadUnitID>
                     <controller>1</controller>
@@ -91,6 +97,12 @@
             </damageLogList>
             <damageLogList>
                 <roundNumber>13</roundNumber>
+            </damageLogList>
+            <damageLogList>
+                <roundNumber>14</roundNumber>
+            </damageLogList>
+            <damageLogList>
+                <roundNumber>15</roundNumber>
                 <damageLog>
                     <attackerID>2</attackerID>
                     <attackerController>0</attackerController>
@@ -99,6 +111,80 @@
                     <damage>64</damage>
                 </damageLog>
             </damageLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>0</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>1</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>2</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>3</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>4</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>5</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>6</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>7</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>8</roundNumber>
+                <ResourceNodeExhaustionLog>
+                    <exhaustedNodeID>580</exhaustedNodeID>
+                    <exhaustedNodeType>GOLD_MINE</exhaustedNodeType>
+                </ResourceNodeExhaustionLog>
+            </ResourceNodeExhaustionLogList>
+            <resourcePickupLogList>
+                <roundNumber>0</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>1</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>2</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>3</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>4</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>5</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>6</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>7</roundNumber>
+                <resourcePickupLog>
+                    <pickupAmount>25</pickupAmount>
+                    <gathererID>2</gathererID>
+                    <controller>0</controller>
+                    <nodeID>580</nodeID>
+                    <nodeType>GOLD_MINE</nodeType>
+                    <resourceType>GOLD</resourceType>
+                </resourcePickupLog>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>8</roundNumber>
+                <resourcePickupLog>
+                    <pickupAmount>25</pickupAmount>
+                    <gathererID>2</gathererID>
+                    <controller>0</controller>
+                    <nodeID>580</nodeID>
+                    <nodeType>GOLD_MINE</nodeType>
+                    <resourceType>GOLD</resourceType>
+                </resourcePickupLog>
+            </resourcePickupLogList>
         </eventLogger>
         <commandsIssued>
             <actionList>
@@ -184,8 +270,8 @@
                     <unitID>2</unitID>
                     <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                         <unitId>2</unitId>
-                        <actionType>PRIMITIVEMOVE</actionType>
-                        <direction>EAST</direction>
+                        <actionType>PRIMITIVEGATHER</actionType>
+                        <direction>SOUTHEAST</direction>
                     </action>
                 </actionEntry>
             </actionList>
@@ -195,8 +281,8 @@
                     <unitID>2</unitID>
                     <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                         <unitId>2</unitId>
-                        <actionType>PRIMITIVEMOVE</actionType>
-                        <direction>EAST</direction>
+                        <actionType>PRIMITIVEGATHER</actionType>
+                        <direction>SOUTHEAST</direction>
                     </action>
                 </actionEntry>
             </actionList>
@@ -246,6 +332,28 @@
             </actionList>
             <actionList>
                 <roundNumber>13</roundNumber>
+                <actionEntry>
+                    <unitID>2</unitID>
+                    <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <unitId>2</unitId>
+                        <actionType>PRIMITIVEMOVE</actionType>
+                        <direction>EAST</direction>
+                    </action>
+                </actionEntry>
+            </actionList>
+            <actionList>
+                <roundNumber>14</roundNumber>
+                <actionEntry>
+                    <unitID>2</unitID>
+                    <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <unitId>2</unitId>
+                        <actionType>PRIMITIVEMOVE</actionType>
+                        <direction>EAST</direction>
+                    </action>
+                </actionEntry>
+            </actionList>
+            <actionList>
+                <roundNumber>15</roundNumber>
                 <actionEntry>
                     <unitID>2</unitID>
                     <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -362,8 +470,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEGATHER</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -376,8 +484,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEGATHER</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -441,6 +549,34 @@
             </actionResultList>
             <actionResultList>
                 <roundNumber>13</roundNumber>
+                <actionResultEntry>
+                    <unitID>2</unitID>
+                    <actionResult>
+                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <unitId>2</unitId>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>EAST</direction>
+                        </action>
+                        <feedback>COMPLETED</feedback>
+                    </actionResult>
+                </actionResultEntry>
+            </actionResultList>
+            <actionResultList>
+                <roundNumber>14</roundNumber>
+                <actionResultEntry>
+                    <unitID>2</unitID>
+                    <actionResult>
+                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <unitId>2</unitId>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>EAST</direction>
+                        </action>
+                        <feedback>COMPLETED</feedback>
+                    </actionResult>
+                </actionResultEntry>
+            </actionResultList>
+            <actionResultList>
+                <roundNumber>15</roundNumber>
                 <actionResultEntry>
                     <unitID>2</unitID>
                     <actionResult>
@@ -560,8 +696,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEGATHER</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -574,8 +710,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEGATHER</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -639,6 +775,34 @@
             </actionResultList>
             <actionResultList>
                 <roundNumber>13</roundNumber>
+                <actionResultEntry>
+                    <unitID>2</unitID>
+                    <actionResult>
+                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <unitId>2</unitId>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>EAST</direction>
+                        </action>
+                        <feedback>COMPLETED</feedback>
+                    </actionResult>
+                </actionResultEntry>
+            </actionResultList>
+            <actionResultList>
+                <roundNumber>14</roundNumber>
+                <actionResultEntry>
+                    <unitID>2</unitID>
+                    <actionResult>
+                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <unitId>2</unitId>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>EAST</direction>
+                        </action>
+                        <feedback>COMPLETED</feedback>
+                    </actionResult>
+                </actionResultEntry>
+            </actionResultList>
+            <actionResultList>
+                <roundNumber>15</roundNumber>
                 <actionResultEntry>
                     <unitID>2</unitID>
                     <actionResult>
@@ -697,6 +861,12 @@
             </deathLogList>
             <deathLogList>
                 <roundNumber>13</roundNumber>
+            </deathLogList>
+            <deathLogList>
+                <roundNumber>14</roundNumber>
+            </deathLogList>
+            <deathLogList>
+                <roundNumber>15</roundNumber>
                 <deathLog>
                     <deadUnitID>3</deadUnitID>
                     <controller>1</controller>
@@ -743,6 +913,12 @@
             </damageLogList>
             <damageLogList>
                 <roundNumber>13</roundNumber>
+            </damageLogList>
+            <damageLogList>
+                <roundNumber>14</roundNumber>
+            </damageLogList>
+            <damageLogList>
+                <roundNumber>15</roundNumber>
                 <damageLog>
                     <attackerID>2</attackerID>
                     <attackerController>0</attackerController>
@@ -751,6 +927,80 @@
                     <damage>64</damage>
                 </damageLog>
             </damageLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>0</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>1</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>2</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>3</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>4</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>5</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>6</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>7</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>8</roundNumber>
+                <ResourceNodeExhaustionLog>
+                    <exhaustedNodeID>580</exhaustedNodeID>
+                    <exhaustedNodeType>GOLD_MINE</exhaustedNodeType>
+                </ResourceNodeExhaustionLog>
+            </ResourceNodeExhaustionLogList>
+            <resourcePickupLogList>
+                <roundNumber>0</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>1</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>2</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>3</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>4</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>5</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>6</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>7</roundNumber>
+                <resourcePickupLog>
+                    <pickupAmount>25</pickupAmount>
+                    <gathererID>2</gathererID>
+                    <controller>0</controller>
+                    <nodeID>580</nodeID>
+                    <nodeType>GOLD_MINE</nodeType>
+                    <resourceType>GOLD</resourceType>
+                </resourcePickupLog>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>8</roundNumber>
+                <resourcePickupLog>
+                    <pickupAmount>25</pickupAmount>
+                    <gathererID>2</gathererID>
+                    <controller>0</controller>
+                    <nodeID>580</nodeID>
+                    <nodeType>GOLD_MINE</nodeType>
+                    <resourceType>GOLD</resourceType>
+                </resourcePickupLog>
+            </resourcePickupLogList>
         </eventLogger>
         <commandsIssued/>
         <commandFeedback/>
@@ -800,6 +1050,12 @@
             </deathLogList>
             <deathLogList>
                 <roundNumber>13</roundNumber>
+            </deathLogList>
+            <deathLogList>
+                <roundNumber>14</roundNumber>
+            </deathLogList>
+            <deathLogList>
+                <roundNumber>15</roundNumber>
                 <deathLog>
                     <deadUnitID>3</deadUnitID>
                     <controller>1</controller>
@@ -846,6 +1102,12 @@
             </damageLogList>
             <damageLogList>
                 <roundNumber>13</roundNumber>
+            </damageLogList>
+            <damageLogList>
+                <roundNumber>14</roundNumber>
+            </damageLogList>
+            <damageLogList>
+                <roundNumber>15</roundNumber>
                 <damageLog>
                     <attackerID>2</attackerID>
                     <attackerController>0</attackerController>
@@ -854,6 +1116,80 @@
                     <damage>64</damage>
                 </damageLog>
             </damageLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>0</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>1</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>2</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>3</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>4</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>5</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>6</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>7</roundNumber>
+            </ResourceNodeExhaustionLogList>
+            <ResourceNodeExhaustionLogList>
+                <roundNumber>8</roundNumber>
+                <ResourceNodeExhaustionLog>
+                    <exhaustedNodeID>580</exhaustedNodeID>
+                    <exhaustedNodeType>GOLD_MINE</exhaustedNodeType>
+                </ResourceNodeExhaustionLog>
+            </ResourceNodeExhaustionLogList>
+            <resourcePickupLogList>
+                <roundNumber>0</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>1</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>2</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>3</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>4</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>5</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>6</roundNumber>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>7</roundNumber>
+                <resourcePickupLog>
+                    <pickupAmount>25</pickupAmount>
+                    <gathererID>2</gathererID>
+                    <controller>0</controller>
+                    <nodeID>580</nodeID>
+                    <nodeType>GOLD_MINE</nodeType>
+                    <resourceType>GOLD</resourceType>
+                </resourcePickupLog>
+            </resourcePickupLogList>
+            <resourcePickupLogList>
+                <roundNumber>8</roundNumber>
+                <resourcePickupLog>
+                    <pickupAmount>25</pickupAmount>
+                    <gathererID>2</gathererID>
+                    <controller>0</controller>
+                    <nodeID>580</nodeID>
+                    <nodeType>GOLD_MINE</nodeType>
+                    <resourceType>GOLD</resourceType>
+                </resourcePickupLog>
+            </resourcePickupLogList>
         </eventLogger>
         <commandsIssued>
             <actionList>
@@ -939,8 +1275,8 @@
                     <unitID>2</unitID>
                     <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                         <unitId>2</unitId>
-                        <actionType>PRIMITIVEMOVE</actionType>
-                        <direction>EAST</direction>
+                        <actionType>PRIMITIVEGATHER</actionType>
+                        <direction>SOUTHEAST</direction>
                     </action>
                 </actionEntry>
             </actionList>
@@ -950,8 +1286,8 @@
                     <unitID>2</unitID>
                     <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                         <unitId>2</unitId>
-                        <actionType>PRIMITIVEMOVE</actionType>
-                        <direction>EAST</direction>
+                        <actionType>PRIMITIVEGATHER</actionType>
+                        <direction>SOUTHEAST</direction>
                     </action>
                 </actionEntry>
             </actionList>
@@ -1001,6 +1337,28 @@
             </actionList>
             <actionList>
                 <roundNumber>13</roundNumber>
+                <actionEntry>
+                    <unitID>2</unitID>
+                    <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <unitId>2</unitId>
+                        <actionType>PRIMITIVEMOVE</actionType>
+                        <direction>EAST</direction>
+                    </action>
+                </actionEntry>
+            </actionList>
+            <actionList>
+                <roundNumber>14</roundNumber>
+                <actionEntry>
+                    <unitID>2</unitID>
+                    <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                        <unitId>2</unitId>
+                        <actionType>PRIMITIVEMOVE</actionType>
+                        <direction>EAST</direction>
+                    </action>
+                </actionEntry>
+            </actionList>
+            <actionList>
+                <roundNumber>15</roundNumber>
                 <actionEntry>
                     <unitID>2</unitID>
                     <action xsi:type="TargetedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -1117,8 +1475,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEGATHER</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -1131,8 +1489,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEGATHER</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -1196,6 +1554,34 @@
             </actionResultList>
             <actionResultList>
                 <roundNumber>13</roundNumber>
+                <actionResultEntry>
+                    <unitID>2</unitID>
+                    <actionResult>
+                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <unitId>2</unitId>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>EAST</direction>
+                        </action>
+                        <feedback>COMPLETED</feedback>
+                    </actionResult>
+                </actionResultEntry>
+            </actionResultList>
+            <actionResultList>
+                <roundNumber>14</roundNumber>
+                <actionResultEntry>
+                    <unitID>2</unitID>
+                    <actionResult>
+                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <unitId>2</unitId>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>EAST</direction>
+                        </action>
+                        <feedback>COMPLETED</feedback>
+                    </actionResult>
+                </actionResultEntry>
+            </actionResultList>
+            <actionResultList>
+                <roundNumber>15</roundNumber>
                 <actionResultEntry>
                     <unitID>2</unitID>
                     <actionResult>
@@ -1315,8 +1701,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEGATHER</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -1329,8 +1715,8 @@
                     <actionResult>
                         <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                             <unitId>2</unitId>
-                            <actionType>PRIMITIVEMOVE</actionType>
-                            <direction>EAST</direction>
+                            <actionType>PRIMITIVEGATHER</actionType>
+                            <direction>SOUTHEAST</direction>
                         </action>
                         <feedback>COMPLETED</feedback>
                     </actionResult>
@@ -1394,6 +1780,34 @@
             </actionResultList>
             <actionResultList>
                 <roundNumber>13</roundNumber>
+                <actionResultEntry>
+                    <unitID>2</unitID>
+                    <actionResult>
+                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <unitId>2</unitId>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>EAST</direction>
+                        </action>
+                        <feedback>COMPLETED</feedback>
+                    </actionResult>
+                </actionResultEntry>
+            </actionResultList>
+            <actionResultList>
+                <roundNumber>14</roundNumber>
+                <actionResultEntry>
+                    <unitID>2</unitID>
+                    <actionResult>
+                        <action xsi:type="DirectedAction" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                            <unitId>2</unitId>
+                            <actionType>PRIMITIVEMOVE</actionType>
+                            <direction>EAST</direction>
+                        </action>
+                        <feedback>COMPLETED</feedback>
+                    </actionResult>
+                </actionResultEntry>
+            </actionResultList>
+            <actionResultList>
+                <roundNumber>15</roundNumber>
                 <actionResultEntry>
                     <unitID>2</unitID>
                     <actionResult>
