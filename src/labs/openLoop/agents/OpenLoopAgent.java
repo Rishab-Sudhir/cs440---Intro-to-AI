@@ -174,6 +174,21 @@ public class OpenLoopAgent
         Map<Integer, Action> actions = new HashMap<Integer, Action>();
 
         // TODO: your code to give your unit actions for this turn goes here!
+        int Myid = this.getMyUnitId();
+        int Enemyid = this.getEnemyUnitId();
+
+        UnitView unitView = state.getUnit(Myid);
+        
+        if (unitView.getYPosition() != 0) {
+            actions.put(Myid, Action.createPrimitiveMove(Myid, Direction.NORTH));
+        }else if (unitView.getXPosition() != 6){
+            actions.put(Myid, Action.createPrimitiveMove(Myid, Direction.EAST));
+        }else{
+            if (state.getUnit(Enemyid) != null) {
+                actions.put(Myid, Action.createPrimitiveAttack(Myid, Enemyid));
+            }
+        }
+
 
         return actions;
 	}
