@@ -147,7 +147,8 @@ public class OpenLoopAgent
 
         // TODO: discover the id of the gold resource! Check out the documentation for StateView:
         // http://engr.case.edu/ray_soumya/Sepia/html/javadoc/edu/cwru/sepia/environment/model/state/State-StateView.html
-        Integer goldResourceNodeId = null;
+
+        Integer goldResourceNodeId = state.getResourceNodeIds(ResourceNode.Type.GOLD_MINE).get(0);
 
         // set our fields
         this.setMyUnitId(myUnitIds.iterator().next());
