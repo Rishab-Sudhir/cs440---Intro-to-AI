@@ -8,8 +8,11 @@ import edu.bu.labs.stealth.graph.Path;
 
 import edu.cwru.sepia.environment.model.state.State.StateView;
 
-
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;   // will need for dfs
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;     // will need for dfs
 import java.util.Set;       // will need for dfs
 
@@ -31,12 +34,97 @@ public class DFSMazeAgent
                        Vertex goal,
                        StateView state)
     {
-        return null;
+
+        HashMap<Vertex, Vertex> ParentsHash = new HashMap<>();    //keeps track of the nodes before the current node ie the parents                                             
+        Stack<Vertex> stack = new Stack<>();                     //maintaining a stack for the whats to be visiting next
+
+        stack.push(src);
+        ParentsHash.put(src, null);
+
+        Path p = new Path(src);
+
+        while (!stack.isEmpty()){
+
+            Vertex u = stack.pop();
+
+            if (u.equals(goal)){ //found goal now trace back
+                
+                Stack<Vertex> reverse = new Stack<>(); 
+                Vertex node = ParentsHash.get(goal);
+
+                while(!node.equals(src)){
+                    reverse.push(node);
+                    node = ParentsHash.get(node);
+                }
+                
+                while(!reverse.isEmpty()){
+                    Vertex node1 = reverse.pop();
+                    p = new Path(node1, 1, p);
+                }
+                
+                return p;
+            }
+
+            int currx = u.getXCoordinate();
+            int curry = u.getYCoordinate();
+
+            for (int x=-1; x<=1; x++) {
+                for(int y=-1; y<=1; y++){
+                    if(x==0 && y==0){
+                        continue;
+                    }
+                    if (state.inBounds(currx + x, curry + y)){ 
+                        if (!((state.hasUnit(currx + x, curry + y)) || (state.isResourceAt(currx + x, curry + y)))){
+                            Vertex v = new Vertex(currx + x, curry + y);
+                            if (!ParentsHash.containsKey(v)){
+                                ParentsHash.put(v, u);
+                                stack.push(v);
+                        }
+                    }
+                }
+            }
+        }
+    }
+        return p; //return src path traced all neighbors and didn't find goal 
     }
 
     @Override
     public boolean shouldReplacePlan(StateView state)
     {
+        Stack<Vertex> plan = this.getCurrentPlan();
+        while (!plan.empty()){
+
+            int x = plan.pop().getXCoordinate();
+            int y = plan.pop().getYCoordinate();
+            
+            if (state.inBounds(x+1, y) && state.hasUnit(x+1, y)){ //right
+                return true;
+            }
+            else if (state.inBounds(x+1, y) && state.hasUnit(x-1, y)){ //left
+                return true;
+            }
+            else if (state.inBounds(x, y+1) && state.hasUnit(x, y+1)){ //up
+                return true;
+            }
+            else if (state.inBounds(x, y-1) && state.hasUnit(x, y-1)){ //down
+                return true;
+            }
+            else if (state.inBounds(x+1, y+1) && state.hasUnit(x+1, y+1)){ //top right
+                return true;
+            }
+            else if (state.inBounds(x+1, y-1) && state.hasUnit(x+1, y-1)){ //bottom right
+                return true;
+            }
+            else if (state.inBounds(x-1, y+1) && state.hasUnit(x-1, y+1)){ //top left
+                return true;
+            }
+            else if (state.inBounds(x-1, y-1) && state.hasUnit(x-1, y-1)){ // bottom left
+                return true;
+            }
+            if(state.inBounds(x, y) && state.isResourceAt(x, y)){
+                return true;
+            }
+        }
         return false;
     }
 
