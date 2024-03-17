@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<state xExtent="10" yExtent="10" nextTargetID="30" nextTemplateID="33" fogOfWar="false">
-    <player>
-        <ID>0</ID>
+<state xExtent="12" yExtent="12" nextTargetID="30" nextTemplateID="33" fogOfWar="false">
+	<player>
+		<ID>0</ID>
         <unit>
             <ID>5000</ID>
             <currentHealth>1</currentHealth>
-            <xPosition>5</xPosition>
-            <yPosition>9</yPosition>
+            <xPosition>6</xPosition>
+            <yPosition>11</yPosition>
             <templateID>25</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -38,380 +38,10 @@
             <durationMove>1</durationMove>
             <durationAttack>1</durationAttack>
             <durationDeposit>1</durationDeposit>
-        </template>
-        <resourceAmount>
-            <quantity>0</quantity>
-            <type>GOLD</type>
-        </resourceAmount>
-        <resourceAmount>
-            <quantity>0</quantity>
-            <type>WOOD</type>
-        </resourceAmount>
-        <supply>0</supply>
-        <supplyCap>0</supplyCap>
-    </player>
-    <player>
-        <ID>1</ID>
-        <unit>
-            <ID>1024</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>4</xPosition>
-            <yPosition>1</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1025</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>4</xPosition>
-            <yPosition>2</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1026</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>4</xPosition>
-            <yPosition>3</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1027</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>4</xPosition>
-            <yPosition>4</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1028</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>4</xPosition>
-            <yPosition>5</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1029</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>4</xPosition>
-            <yPosition>6</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1030</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>4</xPosition>
-            <yPosition>7</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1031</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>4</xPosition>
-            <yPosition>8</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1032</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>5</xPosition>
-            <yPosition>1</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1033</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>5</xPosition>
-            <yPosition>2</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1034</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>5</xPosition>
-            <yPosition>3</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1035</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>5</xPosition>
-            <yPosition>4</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1036</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>5</xPosition>
-            <yPosition>5</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1037</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>5</xPosition>
-            <yPosition>6</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1038</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>5</xPosition>
-            <yPosition>7</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1039</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>5</xPosition>
-            <yPosition>8</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1040</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>6</xPosition>
-            <yPosition>1</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1041</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>6</xPosition>
-            <yPosition>2</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1042</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>6</xPosition>
-            <yPosition>3</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1043</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>6</xPosition>
-            <yPosition>4</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1044</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>6</xPosition>
-            <yPosition>5</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1045</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>6</xPosition>
-            <yPosition>6</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1046</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>6</xPosition>
-            <yPosition>7</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1047</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>6</xPosition>
-            <yPosition>8</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1048</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>7</xPosition>
-            <yPosition>1</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1049</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>7</xPosition>
-            <yPosition>2</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1050</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>7</xPosition>
-            <yPosition>3</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1051</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>7</xPosition>
-            <yPosition>4</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1052</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>7</xPosition>
-            <yPosition>5</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1053</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>7</xPosition>
-            <yPosition>6</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1054</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>7</xPosition>
-            <yPosition>7</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1055</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>7</xPosition>
-            <yPosition>8</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1056</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>8</xPosition>
-            <yPosition>1</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1057</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>8</xPosition>
-            <yPosition>2</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1058</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>8</xPosition>
-            <yPosition>3</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1059</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>8</xPosition>
-            <yPosition>4</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1060</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>8</xPosition>
-            <yPosition>5</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1061</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>8</xPosition>
-            <yPosition>6</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1062</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>8</xPosition>
-            <yPosition>7</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
-        <unit>
-            <ID>1063</ID>
-            <currentHealth>1</currentHealth>
-            <xPosition>8</xPosition>
-            <yPosition>8</yPosition>
-            <templateID>3010</templateID>
-            <cargoAmount>0</cargoAmount>
-            <progressAmount>0</progressAmount>
-        </unit>
+       </template>
+	</player>
+	<player>
+		<ID>1</ID>
         <unit>
             <ID>1000</ID>
             <currentHealth>1</currentHealth>
@@ -487,8 +117,8 @@
         <unit>
             <ID>1008</ID>
             <currentHealth>1</currentHealth>
-            <xPosition>2</xPosition>
-            <yPosition>1</yPosition>
+            <xPosition>1</xPosition>
+            <yPosition>9</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -496,8 +126,8 @@
         <unit>
             <ID>1009</ID>
             <currentHealth>1</currentHealth>
-            <xPosition>2</xPosition>
-            <yPosition>2</yPosition>
+            <xPosition>1</xPosition>
+            <yPosition>10</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -506,7 +136,7 @@
             <ID>1010</ID>
             <currentHealth>1</currentHealth>
             <xPosition>2</xPosition>
-            <yPosition>3</yPosition>
+            <yPosition>1</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -515,7 +145,7 @@
             <ID>1011</ID>
             <currentHealth>1</currentHealth>
             <xPosition>2</xPosition>
-            <yPosition>4</yPosition>
+            <yPosition>2</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -524,7 +154,7 @@
             <ID>1012</ID>
             <currentHealth>1</currentHealth>
             <xPosition>2</xPosition>
-            <yPosition>5</yPosition>
+            <yPosition>3</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -533,7 +163,7 @@
             <ID>1013</ID>
             <currentHealth>1</currentHealth>
             <xPosition>2</xPosition>
-            <yPosition>6</yPosition>
+            <yPosition>4</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -542,7 +172,7 @@
             <ID>1014</ID>
             <currentHealth>1</currentHealth>
             <xPosition>2</xPosition>
-            <yPosition>7</yPosition>
+            <yPosition>5</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -551,7 +181,7 @@
             <ID>1015</ID>
             <currentHealth>1</currentHealth>
             <xPosition>2</xPosition>
-            <yPosition>8</yPosition>
+            <yPosition>6</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -559,8 +189,8 @@
         <unit>
             <ID>1016</ID>
             <currentHealth>1</currentHealth>
-            <xPosition>3</xPosition>
-            <yPosition>1</yPosition>
+            <xPosition>2</xPosition>
+            <yPosition>7</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -568,8 +198,8 @@
         <unit>
             <ID>1017</ID>
             <currentHealth>1</currentHealth>
-            <xPosition>3</xPosition>
-            <yPosition>2</yPosition>
+            <xPosition>2</xPosition>
+            <yPosition>8</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -577,8 +207,8 @@
         <unit>
             <ID>1018</ID>
             <currentHealth>1</currentHealth>
-            <xPosition>3</xPosition>
-            <yPosition>3</yPosition>
+            <xPosition>2</xPosition>
+            <yPosition>9</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -586,8 +216,8 @@
         <unit>
             <ID>1019</ID>
             <currentHealth>1</currentHealth>
-            <xPosition>3</xPosition>
-            <yPosition>4</yPosition>
+            <xPosition>2</xPosition>
+            <yPosition>10</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -596,7 +226,7 @@
             <ID>1020</ID>
             <currentHealth>1</currentHealth>
             <xPosition>3</xPosition>
-            <yPosition>5</yPosition>
+            <yPosition>1</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -605,7 +235,7 @@
             <ID>1021</ID>
             <currentHealth>1</currentHealth>
             <xPosition>3</xPosition>
-            <yPosition>6</yPosition>
+            <yPosition>2</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -614,7 +244,7 @@
             <ID>1022</ID>
             <currentHealth>1</currentHealth>
             <xPosition>3</xPosition>
-            <yPosition>7</yPosition>
+            <yPosition>3</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
@@ -623,42 +253,695 @@
             <ID>1023</ID>
             <currentHealth>1</currentHealth>
             <xPosition>3</xPosition>
+            <yPosition>4</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1024</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>3</xPosition>
+            <yPosition>5</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1025</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>3</xPosition>
+            <yPosition>6</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1026</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>3</xPosition>
+            <yPosition>7</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1027</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>3</xPosition>
             <yPosition>8</yPosition>
             <templateID>3010</templateID>
             <cargoAmount>0</cargoAmount>
             <progressAmount>0</progressAmount>
         </unit>
-        <template xsi:type="UnitTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <ID>3010</ID>
-            <foodCost>0</foodCost>
-            <goldCost>0</goldCost>
-            <woodCost>0</woodCost>
-            <timeCost>1</timeCost>
-            <name>HiddenSquare</name>
-            <baseHealth>1</baseHealth>
-            <baseAttack>0</baseAttack>
-            <piercingAttack>0</piercingAttack>
-            <range>0</range>
-            <armor>0</armor>
-            <sightRange>1</sightRange>
-            <canGather>false</canGather>
-            <canBuild>true</canBuild>
-            <canMove>false</canMove>
-            <canAcceptGold>true</canAcceptGold>
-            <canAcceptWood>true</canAcceptWood>
-            <foodProvided>1</foodProvided>
-            <character>9632</character>
-            <goldGatherRate>0</goldGatherRate>
-            <woodGatherRate>0</woodGatherRate>
-            <durationGatherWood>1</durationGatherWood>
-            <durationGatherGold>1</durationGatherGold>
-            <durationMove>1</durationMove>
-            <durationAttack>1</durationAttack>
-            <durationDeposit>1</durationDeposit>
-            <produces>3000</produces>
-            <produces>3001</produces>
-            <produces>3002</produces>
-        </template>
+        <unit>
+            <ID>1028</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>3</xPosition>
+            <yPosition>9</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1029</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>3</xPosition>
+            <yPosition>10</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1030</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>4</xPosition>
+            <yPosition>1</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1031</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>4</xPosition>
+            <yPosition>2</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1032</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>4</xPosition>
+            <yPosition>3</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1033</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>4</xPosition>
+            <yPosition>4</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1034</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>4</xPosition>
+            <yPosition>5</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1035</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>4</xPosition>
+            <yPosition>6</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1036</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>4</xPosition>
+            <yPosition>7</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1037</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>4</xPosition>
+            <yPosition>8</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1038</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>4</xPosition>
+            <yPosition>9</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1039</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>4</xPosition>
+            <yPosition>10</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1040</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>5</xPosition>
+            <yPosition>1</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1041</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>5</xPosition>
+            <yPosition>2</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1042</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>5</xPosition>
+            <yPosition>3</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1043</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>5</xPosition>
+            <yPosition>4</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1044</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>5</xPosition>
+            <yPosition>5</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1045</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>5</xPosition>
+            <yPosition>6</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1046</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>5</xPosition>
+            <yPosition>7</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1047</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>5</xPosition>
+            <yPosition>8</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1048</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>5</xPosition>
+            <yPosition>9</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1049</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>5</xPosition>
+            <yPosition>10</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1050</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>6</xPosition>
+            <yPosition>1</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1051</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>6</xPosition>
+            <yPosition>2</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1052</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>6</xPosition>
+            <yPosition>3</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1053</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>6</xPosition>
+            <yPosition>4</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1054</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>6</xPosition>
+            <yPosition>5</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1055</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>6</xPosition>
+            <yPosition>6</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1056</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>6</xPosition>
+            <yPosition>7</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1057</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>6</xPosition>
+            <yPosition>8</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1058</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>6</xPosition>
+            <yPosition>9</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1059</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>6</xPosition>
+            <yPosition>10</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1060</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>7</xPosition>
+            <yPosition>1</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1061</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>7</xPosition>
+            <yPosition>2</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1062</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>7</xPosition>
+            <yPosition>3</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1063</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>7</xPosition>
+            <yPosition>4</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1064</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>7</xPosition>
+            <yPosition>5</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1065</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>7</xPosition>
+            <yPosition>6</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1066</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>7</xPosition>
+            <yPosition>7</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1067</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>7</xPosition>
+            <yPosition>8</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1068</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>7</xPosition>
+            <yPosition>9</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1069</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>7</xPosition>
+            <yPosition>10</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1070</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>8</xPosition>
+            <yPosition>1</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1071</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>8</xPosition>
+            <yPosition>2</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1072</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>8</xPosition>
+            <yPosition>3</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1073</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>8</xPosition>
+            <yPosition>4</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1074</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>8</xPosition>
+            <yPosition>5</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1075</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>8</xPosition>
+            <yPosition>6</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1076</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>8</xPosition>
+            <yPosition>7</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1077</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>8</xPosition>
+            <yPosition>8</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1078</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>8</xPosition>
+            <yPosition>9</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1079</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>8</xPosition>
+            <yPosition>10</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1080</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>9</xPosition>
+            <yPosition>1</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1081</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>9</xPosition>
+            <yPosition>2</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1082</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>9</xPosition>
+            <yPosition>3</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1083</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>9</xPosition>
+            <yPosition>4</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1084</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>9</xPosition>
+            <yPosition>5</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1085</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>9</xPosition>
+            <yPosition>6</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1086</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>9</xPosition>
+            <yPosition>7</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1087</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>9</xPosition>
+            <yPosition>8</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1088</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>9</xPosition>
+            <yPosition>9</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1089</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>9</xPosition>
+            <yPosition>10</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1090</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>10</xPosition>
+            <yPosition>1</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1091</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>10</xPosition>
+            <yPosition>2</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1092</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>10</xPosition>
+            <yPosition>3</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1093</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>10</xPosition>
+            <yPosition>4</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1094</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>10</xPosition>
+            <yPosition>5</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1095</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>10</xPosition>
+            <yPosition>6</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1096</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>10</xPosition>
+            <yPosition>7</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1097</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>10</xPosition>
+            <yPosition>8</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1098</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>10</xPosition>
+            <yPosition>9</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
+        <unit>
+            <ID>1099</ID>
+            <currentHealth>1</currentHealth>
+            <xPosition>10</xPosition>
+            <yPosition>10</yPosition>
+            <templateID>3010</templateID>
+            <cargoAmount>0</cargoAmount>
+            <progressAmount>0</progressAmount>
+        </unit>
         <template xsi:type="UnitTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <ID>3000</ID>
             <foodCost>0</foodCost>
@@ -678,7 +961,7 @@
             <canAcceptGold>false</canAcceptGold>
             <canAcceptWood>false</canAcceptWood>
             <foodProvided>1</foodProvided>
-            <character>0</character>
+            <character>0</character> <!-- found here: https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html -->
             <goldGatherRate>0</goldGatherRate>
             <woodGatherRate>0</woodGatherRate>
             <durationGatherWood>1</durationGatherWood>
@@ -709,7 +992,7 @@
             <canAcceptGold>false</canAcceptGold>
             <canAcceptWood>false</canAcceptWood>
             <foodProvided>1</foodProvided>
-            <character>9783</character>
+            <character>9783</character> <!-- found here: https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html -->
             <goldGatherRate>0</goldGatherRate>
             <woodGatherRate>0</woodGatherRate>
             <durationGatherWood>1</durationGatherWood>
@@ -740,7 +1023,7 @@
             <canAcceptGold>false</canAcceptGold>
             <canAcceptWood>false</canAcceptWood>
             <foodProvided>1</foodProvided>
-            <character>9679</character>
+            <character>9679</character> <!-- found here: https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html -->
             <goldGatherRate>0</goldGatherRate>
             <woodGatherRate>0</woodGatherRate>
             <durationGatherWood>1</durationGatherWood>
@@ -752,15 +1035,36 @@
             <produces>3001</produces>
             <produces>3002</produces>
         </template>
-        <resourceAmount>
-            <quantity>0</quantity>
-            <type>GOLD</type>
-        </resourceAmount>
-        <resourceAmount>
-            <quantity>0</quantity>
-            <type>WOOD</type>
-        </resourceAmount>
-        <supply>0</supply>
-        <supplyCap>0</supplyCap>
-    </player>
+        <template xsi:type="UnitTemplate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ID>3010</ID>
+            <foodCost>0</foodCost>
+            <goldCost>0</goldCost>
+            <woodCost>0</woodCost>
+            <timeCost>1</timeCost>
+            <name>HiddenSquare</name>
+            <baseHealth>1</baseHealth>
+            <baseAttack>0</baseAttack>
+            <piercingAttack>0</piercingAttack>
+            <range>0</range>
+            <armor>0</armor>
+            <sightRange>1</sightRange>
+            <canGather>false</canGather>
+            <canBuild>true</canBuild>
+            <canMove>false</canMove>
+            <canAcceptGold>true</canAcceptGold>
+            <canAcceptWood>true</canAcceptWood>
+            <foodProvided>1</foodProvided>
+            <character>9632</character> <!-- found here: https://www.alt-codes.net/square-symbols -->
+            <goldGatherRate>0</goldGatherRate>
+            <woodGatherRate>0</woodGatherRate>
+            <durationGatherWood>1</durationGatherWood>
+            <durationGatherGold>1</durationGatherGold>
+            <durationMove>1</durationMove>
+            <durationAttack>1</durationAttack>
+            <durationDeposit>1</durationDeposit>
+            <produces>3000</produces>
+            <produces>3001</produces>
+            <produces>3002</produces>
+        </template>
+	</player>
 </state>
