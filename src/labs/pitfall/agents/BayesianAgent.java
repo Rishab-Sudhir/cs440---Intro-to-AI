@@ -72,19 +72,377 @@ public class BayesianAgent
          *          As an aside here, you can certainly choose to calculate Pr[Pit_X = false | evidence] values
          *          instead (and then pick the coordinate with the highest prob), its up to you!
          **/
+
+        //  // Helper function that generates binary combinations
+        //  private List<List<Boolean>> generateCombinations(int n) {
+        //     List<List<Boolean>> combinations = new ArrayList<>();
+        //     boolean[] combination = new boolean[n];
+        //     generateAllBinaryStrings(n, combination, 0, combinations);
+        //     return combinations;
+        // }
+
+        // // Helper function that generates binary combinations
+        // private void generateAllBinaryStrings(int n, boolean[] combination, int i, List<List<Boolean>> combinations) {
+        //     if (i == n) {
+        //         List<Boolean> combinationList = new ArrayList<>();
+        //         for (boolean value : combination) {
+        //             combinationList.add(value);
+        //         }
+        //         combinations.add(combinationList);
+        //         return;
+        //     }
+    
+        //     combination[i] = false;
+        //     generateAllBinaryStrings(n, combination, i + 1, combinations);
+    
+        //     combination[i] = true;
+        //     generateAllBinaryStrings(n, combination, i + 1, combinations);
+        // }
+
+        // // Checking if a current combination is Valid
+        // private Boolean is_valid_pit(Map<Coordinate, Boolean> breezeCoordinates ,List<Coordinate> frontierCoordinates, List<Boolean> combination){
+        //     List<Coordinate> frontierCoordinatesToCheck = new ArrayList<Coordinate>();
+
+        //     for (int z = 0; z < combination.size(); z++) {
+        //         if (combination.get(z)){
+        //             frontierCoordinatesToCheck.add(frontierCoordinates.get(z));
+        //         }
+        //     }
+
+        //     for(Coordinate coord: frontierCoordinatesToCheck){
+        //         int currentCoordinateX = coord.getXCoordinate();
+        //         int currentCoordinateY = coord.getYCoordinate();
+                
+        //         Coordinate north = new Coordinate(currentCoordinateX, currentCoordinateY+1);
+        //         Coordinate south = new Coordinate(currentCoordinateX, currentCoordinateY-1);
+        //         Coordinate east = new Coordinate(currentCoordinateX+1, currentCoordinateY);
+        //         Coordinate west = new Coordinate(currentCoordinateX-1, currentCoordinateY);
+    
+        //         if(((breezeCoordinates.containsKey(north) && !breezeCoordinates.get(north)) || (breezeCoordinates.containsKey(south) && !breezeCoordinates.get(south)) || 
+        //         (breezeCoordinates.containsKey(east) && !breezeCoordinates.get(east)) || (breezeCoordinates.containsKey(west) && !breezeCoordinates.get(west)))){
+        //             // all discovered neighbors of the pit do not meet the requirement for the current frontier to have a pit
+        //             // so it must not have a pit
+        //             return false;
+        //         }
+        //     }
+        //     return true;
+        // }
+
+
+        // // Checking if a current combination is Valid
+        // private Boolean is_valid_breeze(Map<Coordinate, Boolean> breezeCoordinates ,List<Coordinate> frontierCoordinates, List<Boolean> combination){
+        //     for(Coordinate breeze: breezeCoordinates.keySet()){
+
+        //         Boolean has_breeze = breezeCoordinates.get(breeze);
+        //         if(has_breeze){
+        //             int currentCoordinateX = breeze.getXCoordinate();
+        //             int currentCoordinateY = breeze.getYCoordinate();
+    
+        //             Coordinate north = new Coordinate(currentCoordinateX, currentCoordinateY+1);
+        //             Coordinate south = new Coordinate(currentCoordinateX, currentCoordinateY-1);
+        //             Coordinate east = new Coordinate(currentCoordinateX+1, currentCoordinateY);
+        //             Coordinate west = new Coordinate(currentCoordinateX-1, currentCoordinateY);
+
+        //             if (!breezeCoordinates.get(north)) {
+        //                 // bruh i tried
+        //                 int i;
+        //                 for (i = 0; i < frontierCoordinates.size();i++){
+        //                     Coordinate Temp = frontierCoordinates.get(i);
+        //                     if (Temp.equals(north)){
+        //                         break;
+        //                     }
+        //                 }
+
+        //                 Boolean is_pit = combination.get(i);
+        //                 if (is_pit){
+        //                     continue;
+        //                 }
+        //             } else if (!breezeCoordinates.get(south)) {
+        //                 int index = frontierCoordinates.indexOf(south);
+        //                 if (index >= combination.size()){
+        //                     return false;
+        //                 }
+        //                 Boolean is_pit = combination.get(index);
+        //                 if (is_pit){
+        //                     continue;
+        //                 }
+        //             } else if (!breezeCoordinates.get(west)) {
+        //                 int index = frontierCoordinates.indexOf(west);
+        //                 if (index >= combination.size()){
+        //                     return false;
+        //                 }
+        //                 Boolean is_pit = combination.get(index);
+        //                 if (is_pit){
+        //                     continue;
+        //                 }
+        //             }  else if (!breezeCoordinates.get(east)) {
+        //                 int index = frontierCoordinates.indexOf(east);
+        //                 if (index >= combination.size()){
+        //                     return false;
+        //                 }
+        //                 Boolean is_pit = combination.get(index);
+        //                 if (is_pit){
+        //                     continue;
+        //                 }
+        //             } else {
+        //                 return false;
+        //             }
+        //         }
+        //     }
+        //     return true;
+        // }
+
+        // public Coordinate getNextCoordinateToExplore(){
+
+        //     List<Coordinate> frontierCoordinates = new ArrayList<Coordinate>(this.getFrontierPitCoordinates());
+        //     Map<Coordinate, Boolean> breezeCoordinates = getKnownBreezeCoordinates();
+        //     double pitProbability = this.getPitProb();
+
+        //     HashMap<Coordinate, Double> Frontier_probabilities = new HashMap<Coordinate, Double>();
+
+        //     List<List<Boolean>> combinations = generateCombinations(frontierCoordinates.size());
+        //     List<List<Boolean>> validCombinations = new ArrayList<>();
+        //     System.out.println(frontierCoordinates);
+
+        //     for (List<Boolean> combination: combinations){
+        //         if (is_valid_pit(breezeCoordinates, frontierCoordinates, combination)){
+        //             System.out.println(combination);
+        //             if (is_valid_breeze(breezeCoordinates, frontierCoordinates, combination)){
+        //                 validCombinations.add(combination);
+        //             }
+        //         }
+        //     }
+                 
+        //     for (int i = 0; i < frontierCoordinates.size(); i++) {
+        //         Coordinate coord = frontierCoordinates.get(i);
+        //         Frontier_probabilities.put(coord, 0.0);
+
+        //         for (List<Boolean> combination: validCombinations){
+        //             if(combination.get(i)){ // If there's a pit in the current combination at this frontier
+        //                 double combinationProbability = 1.0;
+        //                 // Calculate the probability of this combination
+        //                 for (int x = 0; x < combination.size(); x++) {
+        //                     if (combination.get(x)){
+        //                         combinationProbability *= pitProbability;
+        //                     }else{
+        //                         combinationProbability *= (1 - pitProbability);
+        //                     }
+        //                 }
+        //                 double currentProbability = Frontier_probabilities.get(coord);
+        //                 Frontier_probabilities.put(coord, currentProbability + combinationProbability);
+        //             }
+        //         }
+        //     }
+
+        //     // Find the coordinate with the minimum probability to explore
+        //     Coordinate safestCoordinate = null;
+        //     double minProbability = Double.MAX_VALUE;
+
+        //     for (Coordinate coord : frontierCoordinates) {
+        //         System.out.println(coord + ": " + Frontier_probabilities.get(coord));
+        //     }
+            
+        //     for (Map.Entry<Coordinate, Double> entry : Frontier_probabilities.entrySet()) {
+        //         if (entry.getValue() < minProbability) {
+        //             minProbability = entry.getValue();
+        //             safestCoordinate = entry.getKey();
+        //         }
+        //     }
+        //     System.out.println("\n\n Our answer" + minProbability + " " + safestCoordinate);
+        //     return safestCoordinate; // Return the safest coordinate to explore next
+
+        //  }
+
         public Coordinate getNextCoordinateToExplore()
         {
-            System.out.println(this.getFrontierPitCoordinates());
-
+            System.out.println("\nMy probs:\n");
             Coordinate toExplore = null;
-            if(this.getFrontierPitCoordinates().size() > 0)
-            {
-                List<Coordinate> choices = new ArrayList<Coordinate>(this.getFrontierPitCoordinates());
-                Collections.shuffle(choices);
-                toExplore = choices.get(0);
+            double minProb = Double.MAX_VALUE; // Use MAX_VALUE for minimum comparison
+
+            Map<Coordinate, List<Coordinate>> guaranteedPits = new HashMap<>();
+            Map<Coordinate, List<Coordinate>> frontToBreeze = new HashMap<>();
+            for (Coordinate c : this.getFrontierPitCoordinates()) {
+
+                int breezeCount = 0;
+                List<Coordinate> breezesList = new ArrayList<>();
+                List<Coordinate> neighbors = this.getNeighbors(c); 
+
+                int unexploredNeighbors = 0;
+
+                //breezes
+                Map<Coordinate, Boolean> breezes = getKnownBreezeCoordinates();
+
+                for (Coordinate neighbor : neighbors) {
+                    if(breezes.containsKey(neighbor)){
+                        if(breezes.get(neighbor)){
+                            breezeCount++;
+                            breezesList.add(neighbor);
+                        }
+                    }
+                    if(!getKnownBreezeCoordinates().keySet().contains(neighbor) && getOtherPitCoordinates().contains(neighbor) && !getFrontierPitCoordinates().contains(neighbor) ){
+                        unexploredNeighbors +=1;
+                    }
+                }
+                // Assuming getUnexploredNeighbors returns a count of neighbors that are unexplored and could potentially be pits
+                if (breezeCount > unexploredNeighbors) {
+                    System.out.println("\n\n\n\\n" + c.toString() + breezesList.toString()+"\n\n\n\\n");
+                    guaranteedPits.put(c, breezesList);
+                }
+                frontToBreeze.put(c, breezesList);
+            }
+
+            // Iterate through each frontier coordinate to calculate its pit probability
+            for (Coordinate c : this.getFrontierPitCoordinates()) {
+                double probOfPit = 0; // Probability of pit at coordinate c
+
+                List<Coordinate> neighbors = this.getNeighbors(c); 
+
+                // Total possible configurations: 2^neighbors.size() (each neighbor can either be a pit or not)
+                int totalConfigs = (int) Math.pow(2, getFrontierPitCoordinates().size());
+                for (int config = 0; config < totalConfigs; config++) {
+                    List<Integer> pitConfig = getConfiguration(config, getFrontierPitCoordinates().size()); // Convert config to binary representation
+
+                    if (isValidConfiguration(pitConfig, neighbors)) { // Check if config is valid based on known breezes
+                        System.out.println(pitConfig.toString());
+                        double configProb = calculateConfigProbability(c, pitConfig, neighbors, guaranteedPits, frontToBreeze); // Calculate probability of this configuration
+                        probOfPit += configProb;
+                        System.out.print(c.toString());
+                    }
+                }
+                System.out.println(probOfPit);
+
+                if (probOfPit < minProb) {
+                    minProb = probOfPit;
+                    toExplore = c;  
+                }
             }
             return toExplore;
         }
+
+        private List<Coordinate> getNeighbors(Coordinate frontier){
+            // Calculate all possible valid configurations for pits around c
+                // Considering a simplified model where we look at direct (cardinal) neighbors only
+                int frontier_x = frontier.getXCoordinate();
+                int frontier_y = frontier.getYCoordinate();
+
+                Coordinate north = new Coordinate(frontier_x, frontier_y+1);
+                Coordinate south = new Coordinate(frontier_x, frontier_y-1);
+                Coordinate east = new Coordinate(frontier_x+1, frontier_y);
+                Coordinate west = new Coordinate(frontier_x-1, frontier_y);
+
+                // Creating a list to hold the coordinates
+                List<Coordinate> neighbors = new ArrayList<>();
+                // Adding each coordinate to the list
+                neighbors.add(north);
+                neighbors.add(south);
+                neighbors.add(east);
+                neighbors.add(west);
+
+                return neighbors;
+        }
+
+        private List<Integer> getConfiguration(int config, int size) {
+            String binaryString = Integer.toBinaryString(config);
+            // Pad the binary string with leading zeros to match the size (number of neighbors)
+            String paddedBinaryString = String.format("%" + size + "s", binaryString).replace(' ', '0');
+        
+            List<Integer> configuration = new ArrayList<>();
+            for (char c : paddedBinaryString.toCharArray()) {
+                // Add true for '1' (indicating a pit) and false for '0' (no pit)
+                if (c == '1'){
+                    configuration.add(1);
+                }
+                else{
+                    configuration.add(0);
+                }
+            }
+            return configuration;
+        }
+
+        private Boolean isValidConfiguration(List<Integer> pitConfig, List<Coordinate> neighbors){
+
+            for(int frontierConfig : pitConfig){
+                int countBreeze = 0;
+                
+
+                for(Coordinate neighbor: neighbors){
+                    //breezes
+                    Map<Coordinate, Boolean> breezes = getKnownBreezeCoordinates();
+                    //if explored/in bounds node && breeze value false
+                    if(breezes.containsKey(neighbor)){
+                        if(breezes.get(neighbor)){
+                            countBreeze+=1;
+                        }
+                    }
+                }
+
+                if(countBreeze == 0 && frontierConfig == 1){
+                    return false;
+                }  
+                
+            }
+            return true;
+
+        }
+        private double calculateConfigProbability(Coordinate curr_frontier, List<Integer> pitConfig, List<Coordinate> neighbors,  Map<Coordinate, List<Coordinate>> guaranteedPits, Map<Coordinate, List<Coordinate>> frontToBreeze){
+            int num_pits = 0;
+            int num_frontier = 0;
+
+            for(int frontier: pitConfig){
+                if(frontier == 1){
+                    num_pits  += 1;
+                }
+                num_frontier+=1;
+                
+            }
+
+            double prob = Math.pow(this.pitProb, num_pits) * Math.pow((1-this.pitProb), num_frontier - num_pits);
+
+
+            //more breezes = more likely pit
+
+            int countBreeze = 0;
+            int unexploredNeighbors = 0;
+
+
+
+            for(Coordinate neighbor: neighbors){
+
+                //breezes
+                Map<Coordinate, Boolean> breezes = getKnownBreezeCoordinates();
+                //if explored/in bounds node && breeze value false
+                if(breezes.containsKey(neighbor)){
+                    if(breezes.get(neighbor)){
+                        for(Coordinate gf: guaranteedPits.keySet()){
+                            List<Coordinate> brezloc = guaranteedPits.get(gf);
+                            // if the breeze is not part of breezes for guarnteed pits then count
+                            if (!curr_frontier.equals(gf) && !brezloc.contains(neighbor)){
+                                countBreeze +=1;
+                            }
+                        }
+                       
+                    }
+                    else{
+                        if(!getOtherPitCoordinates().contains(neighbor)){
+                            unexploredNeighbors = 100;
+                        }
+                    }       
+      
+                }
+                    
+
+        
+            //     it is not a breeze and is part of other pits
+            //    else if(getOtherPitCoordinates().contains(neighbor)&& !breezes.get(neighbor) && !getFrontierPitCoordinates().contains(neighbor)){
+            //         prob = prob-1;
+            //     }
+            }
+
+            
+
+            return prob + countBreeze - unexploredNeighbors;
+        }
+
     }
 
     private int                     myUnitID;
