@@ -77,34 +77,55 @@ public class ProbabilisticAgent
         for (Ship.Orientation orientation : Ship.Orientation.values()) {
             
             current_Ship = Ship.create(1, ship_Type, start_Coord, orientation);
-
             int ship_Size = current_Ship.size();
 
-            for (int row = 0; row < board_rows; row++){
-                for (int col = 0; col < board_cols - (ship_Size - 1); col++){
+            int to_minus_rows;
+            int to_minus_cols;
+
+            if (orientation == Ship.Orientation.VERTICAL){
+                to_minus_rows = 0;
+                to_minus_cols = (ship_Size - 1);
+            } else {
+                to_minus_rows = (ship_Size - 1);
+                to_minus_cols = 0;
+            }
+
+            for (int row = 0; row < board_rows - to_minus_rows; row++){
+                for (int col = 0; col < board_cols - to_minus_cols; col++){
                     // get the coordinate at this spot
 
                     Coordinate next_Possible_Coordinate = new Coordinate(row, col);
 
                     // move
-                    current_Ship.moveTo(next_Possible_Coordinate);
+                    current_Ship = current_Ship.moveTo(next_Possible_Coordinate);
 
                     if (!valid_movement(current_Ship, current_Board, game)){
                         continue;
                     } else {
-                    
                         // Now we know the board is valid
+
                         // increment the total number of moves
-                        
                         total_Placements++;
-                        
-                        // Then add 1 to each point in the map where the ship could be
+
+                        // get the possible locations the ship could be at
                         possible_ship_Coordinates = current_Ship.getCoordinates();
 
-                        for(Coordinate coord : possible_ship_Coordinates){
-                            int x = coord.getXCoordinate();
-                            int y = coord.getYCoordinate();
-                            board_Probabilities[x][y]++;
+                        // If the current coordinate is a hit we want to increase this probability
+                        // so it checks this more urgently
+                        if (current_Board[row][col].equals(Outcome.HIT)){
+                            // loop through those coordnates and increment their probability
+                            for(Coordinate coord : possible_ship_Coordinates){
+                                int x = coord.getXCoordinate();
+                                int y = coord.getYCoordinate();
+                                board_Probabilities[x][y] += 10;
+                            }
+                        } else {
+                            // loop through those coordnates and increment their probability
+                            for(Coordinate coord : possible_ship_Coordinates){
+                                int x = coord.getXCoordinate();
+                                int y = coord.getYCoordinate();
+                                board_Probabilities[x][y]++;
+                            }
                         }
                     }
                }
@@ -138,12 +159,10 @@ public class ProbabilisticAgent
         // counts of how many of each ship we have
         Map<ShipType, Integer> number_Of_Ships = game_Constants.getShipTypeToPopulation();
 
-        // BOARDS AND THEIR PROBS
-
         // This will hold probabilties for all the ships
         double[][] total_Board_Probabilities = new double[game_Constants.getNumRows()][game_Constants.getNumCols()];
 
-        //
+        // Iterate through each ship type and 
         for (Map.Entry<ShipType, Integer> entry : number_Of_Ships.entrySet()){
                 Ship.ShipType shipType = entry.getKey(); // The type of the ship patrol_boat, battleship ...
                 int shipCount = entry.getValue(); // Number of ships of this type
@@ -151,12 +170,12 @@ public class ProbabilisticAgent
 
                 for(int rows = 0; rows < board_rows; rows++){
                     for(int cols = 0; cols < board_cols; cols++){
-                        double probability_of_this_board = 0.0;
+                        double probability_of_this_position = 0.0;
 
-                        probability_of_this_board += current_ship_board[rows][cols] * shipCount;
+                        probability_of_this_position += current_ship_board[rows][cols] * shipCount;
 
                         // += so that we accumulate probabilities
-                        total_Board_Probabilities[rows][cols] += probability_of_this_board;
+                        total_Board_Probabilities[rows][cols] += probability_of_this_position;
                     }
                 }
             }
@@ -170,7 +189,7 @@ public class ProbabilisticAgent
                 double p = total_Board_Probabilities[rows][cols];
 
                 if(p > best_Probabilty){
-                    
+
                     // check we haven't tried this coordinate already
                     if(!current_Board_State[rows][cols].equals(Outcome.UNKNOWN)){
                         continue;
